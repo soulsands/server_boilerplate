@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:KunalKapadia/express-mongoose-es6-rest-api.git",
+    "url": "git@github.com:soulsands/server_boilerplate.git",
     "precommit": "yarn lint && yarn test"
   },
   "keywords": [

@@ -2,7 +2,11 @@
 
 # Overview
 
-[![Coverage Status](https://coveralls.io/repos/github/soulsands/express-mongoose-es6-rest-api/badge.svg?branch=develop)](https://coveralls.io/github/soulsands/express-mongoose-es6-rest-api?branch=develop)
+
+
+[![Coverage Status](https://coveralls.io/repos/github/soulsands/server_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/soulsands/server_boilerplate?branch=master)
+
+[![Build Status](https://travis-ci.com/soulsands/server_boilerplate.svg?branch=master)](https://travis-ci.com/soulsands/server_boilerplate)
 
 [原仓库](https://github.com/kunalkapadia/express-mongoose-es6-rest-api)比较老了，很多依赖没更新，在此调整一下。原仓库有说明的不再赘述，只提供更新记录。
 
