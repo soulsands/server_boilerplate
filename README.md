@@ -16,5 +16,9 @@
 
 1. 替换istanbul:1.1.0-alpha.1(伊斯坦布尔)为nyc(纽约城)， 并且修改配置为nyc。如果设置husky在每次提交前要通过单元测试，测试率通过了才给提交，那这样的代码就必须是有测试的代码。
 2. 添加nodemon，文件变动自动更新。
-3. coverall可以记录一些测试代码，但本项目还和travis.ci绑定了，如果要弄的话还得学下这个持续继承的工具。
-4. 暂时卸载husky
+3. coverall可以记录一些测试结果，和nyc集成的话可以看下[这个页面](https://github.com/istanbuljs/nyc/blob/HEAD/docs/setup-coveralls.md)。当前项目已配置好，如果是私有项目则需要添加环境变量。目前有免费的。测试完成后可以生成badge徽章，很多GitHub上的框架都会显示。
+4. 修改travis.ci配置文件，这是个持续集成的工具，可以监听GitHub项目的推送，之后可以进行自动测试和部署。目前有免费的。提供徽章。
+5. 暂时卸载husky
+6. 去除codeclimate配置文件，代码质量分析功能，但用的引擎是eslint，通过vscode好好配置，应该不需要这个。
+7. 更新mocha。
+8. commitizen要研究一下
