@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "10.15.3"
+services:
+  - mongodb
+cache:
+  directories:
+    - node_modules
+git:
+  depth: 3
+script:
+  - yarn cover
+after_script:
+  - yarn cover:send
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.16.0
+  - export PATH=$HOME/.yarn/bin:$PATH
