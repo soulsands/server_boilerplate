@@ -15,16 +15,16 @@
     "dev:debug": "cross-env DEBUG=express-mongoose-es6-rest-api:* npm run dev",
     "lint": "esw *.js server config --color",
     "lint:watch": "yarn lint -- --watch",
-    "test": "cross-env NODE_ENV=test ./node_modules/.bin/mocha --ui bdd --reporter spec --colors server --recursive",
+    "test": "cross-env NODE_ENV=test mocha server",
     "cover": "nyc npm run test",
     "cover:report": "nyc report --reporter=lcov",
     "cover:code": "nyc instrument . ./.nyc_code --exclude *nyc*  --delete",
-    "cover:send": "nyc report --reporter=text-lcov | coveralls"
+    "cover:send": "nyc report --reporter=text-lcov | coveralls",
+    "precommit": "npx git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:soulsands/server_boilerplate.git",
-    "precommit": "yarn lint && yarn test"
+    "url": "git@github.com:soulsands/server_boilerplate.git"
   },
   "keywords": [
     "express",
@@ -58,23 +58,22 @@
     "method-override": "^2.3.10",
     "mongoose": "4.7.4",
     "morgan": "1.9.0",
+    "supertest": "^4.0.2",
     "winston": "2.4.1"
   },
   "devDependencies": {
-    "mocha": "^6.1.4",
-    "chai": "4.1.2",
-    "commitizen": "^2.9.6",
+    "chai": "^4.2.0",
+    "commitizen": "^3.1.1",
     "coveralls": "^3.0.4",
     "cross-env": "5.1.4",
-    "cz-conventional-changelog": "1.2.0",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "3.16.1",
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.16.0",
     "eslint-watch": "2.1.14",
+    "mocha": "^6.1.4",
     "nodemon": "^1.19.1",
     "nyc": "^14.1.1",
-    "supertest": "3.0.0",
-    "supertest-as-promised": "4.0.2",
     "validate-commit-msg": "^2.14.0"
   },
   "license": "MIT",
