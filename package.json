@@ -19,8 +19,12 @@
     "cover": "nyc npm run test",
     "cover:report": "nyc report --reporter=lcov",
     "cover:code": "nyc instrument . ./.nyc_code --exclude *nyc*  --delete",
-    "cover:send": "nyc report --reporter=text-lcov | coveralls",
-    "precommit": "npx git-cz"
+    "cover:send": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   },
   "repository": {
     "type": "git",
