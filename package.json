@@ -19,7 +19,8 @@
     "cover": "nyc npm run test",
     "cover:report": "nyc report --reporter=lcov",
     "cover:code": "nyc instrument . ./.nyc_code --exclude *nyc*  --delete",
-    "cover:send": "nyc report --reporter=text-lcov | coveralls"
+    "cover:send": "nyc report --reporter=text-lcov | coveralls",
+    "commit": "npx git-cz"
   },
   "husky": {
     "hooks": {
