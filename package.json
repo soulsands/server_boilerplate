@@ -20,12 +20,10 @@
     "cover:report": "nyc report --reporter=lcov",
     "cover:code": "nyc instrument . ./.nyc_code --exclude *nyc*  --delete",
     "cover:send": "nyc report --reporter=text-lcov | coveralls",
-    "commit": "npx git-cz"
+    "cm": "npx git-cz"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "yarn cover"
-    }
+    "hooks": {}
   },
   "repository": {
     "type": "git",
@@ -76,7 +74,6 @@
     "eslint-config-airbnb-base": "7.1.0",
     "eslint-plugin-import": "1.16.0",
     "eslint-watch": "2.1.14",
-    "husky": "^3.0.0",
     "mocha": "^6.1.4",
     "nodemon": "^1.19.1",
     "nyc": "^14.1.1",
