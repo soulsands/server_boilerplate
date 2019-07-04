@@ -22,9 +22,6 @@
     "cover:send": "nyc report --reporter=text-lcov | coveralls",
     "cm": "npx git-cz"
   },
-  "husky": {
-    "hooks": {}
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:soulsands/server_boilerplate.git"
