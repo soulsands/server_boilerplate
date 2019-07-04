@@ -20,7 +20,7 @@ supertest 是 superagent 用来测试的版本，抽象了一些 api。
 2. 添加 nodemon，文件变动自动更新。
 3. [coverall](https://github.com/istanbuljs/nyc/blob/HEAD/docs/setup-coveralls.md)可以记录一些测试结果，和 nyc 集成的话可以看下。当前项目已配置好，如果是私有项目则需要添加环境变量。目前有免费的。测试完成后可以生成 badge 徽章，很多 GitHub 上的框架都会显示。
 4. 修改[travis.ci](https://www.travis-ci.org/)配置文件，这是个持续集成的工具，可以监听 GitHub 项目的推送，之后可以进行自动测试和部署。目前有免费的。提供徽章。
-5. 暂时卸载 husky
+5. husky的配置和commitizen有点冲突，如果直接npx git-gz那还可以，如果通过命令去调用会出现断层。需要查找一下原因。
 6. 去除 codeclimate 配置文件，代码质量分析功能，但用的引擎是 eslint，通过 vscode 好好配置，应该不需要这个。
 7. 更新[mocha](https://mochajs.org/)版本，提供 js 配置文件。
 8. 更新[supertest](https://www.npmjs.com/package/supertest)版本。卸载 supertest-as-promised，因为本体已经支持 promise。
